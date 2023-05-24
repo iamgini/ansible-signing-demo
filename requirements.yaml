@@ -1,0 +1,4 @@
+collections:
+- name: iamgini.collection_demo_roles_modules
+  version: 0.0.1
+  source: https://automationhub22-1.lab.local/api/galaxy/content/published/
