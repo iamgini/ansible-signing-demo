@@ -1,0 +1,24 @@
+---
+ansible-navigator:
+  # mode: stdout
+  editor:
+    command: code-server {filename}
+    console: false
+  execution-environment:
+    enabled: true
+    container-engine: podman
+    image: registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8
+    # image: registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8
+    # image: registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8:1.0.0-209
+    # image: ee-supported-rhel8
+    pull:
+      # arguments:
+      #   - "--tls-verify=false"
+      policy: missing
+  logging:
+    level: info
+    append: false
+  playbook-artifact:
+    enable: true
+    replay: artifacts/ansible_artifact.json
+    save-as: ./artifacts/{playbook_name}-artifact-{time_stamp}.json

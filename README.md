@@ -34,7 +34,7 @@ ansible.test_collection:1.0.0 was installed successfully
 Install Collection without checking
 
 ```shell
-$ nsible-galaxy collection install community.lab_collection --keyring /home/rhel/keyring.kbx -c -vvvv
+$ ansible-galaxy collection install community.lab_collection --keyring /home/rhel/keyring.kbx -c -vvvv
 ...<removed for brevity>...
 Installing 'community.lab_collection:1.0.0' to '/home/rhel/.ansible/collections/ansible_collections/community/lab_collection'
 Running command '['gpg', '--status-fd=5', '--verify', '--batch', '--no-tty', '--no-default-keyring', '--keyring=/home/rhel/keyring.kbx', '-', '/home/rhel/.ansible/collections/ansible_collections/community/lab_collection/MANIFEST.json']'
