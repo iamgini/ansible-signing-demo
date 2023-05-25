@@ -1,2 +1,3 @@
 ./collections*
 /playbook-artifacts
+*.tar.gz
