@@ -19,6 +19,6 @@ ansible-navigator:
     level: info
     append: false
   playbook-artifact:
-    enable: true
+    enable: false
     replay: artifacts/ansible_artifact.json
     save-as: ./artifacts/{playbook_name}-artifact-{time_stamp}.json
